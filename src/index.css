@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter", serif;
+}
+
+.active {
+  transform: translateY(0) !important;
+  transition: transform .25s ease-in-out;
+}
+
+.active div {
+  transform: scale(18) !important;
+  transition: transform .55s ease-out .3s;
+}
